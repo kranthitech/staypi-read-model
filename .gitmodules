@@ -1,0 +1,3 @@
+[submodule "staypi-test-data"]
+	path = staypi-test-data
+	url = https://github.com/kranthitech/staypi-test-data

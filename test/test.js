@@ -6,7 +6,7 @@ describe('Staypi', function() {
 
     describe('Read Model', function() {
         it('should load a model from a folder as expected', function(done) {
-            staypiRead.loadModelFromFolder('./test/test_models_user/User','User')
+            staypiRead.loadModelFromFolder('./staypi-test-data/test_models_user/User','User')
             .then(function(model) {
                 // Check if all the deep properties exist
                 expect(model).to.have.property('relations')
@@ -21,7 +21,7 @@ describe('Staypi', function() {
         })
 
         it('should load models from a folder as expected', function(done) {
-            staypiRead.loadModelsFromFolder('./test/test_models_user')
+            staypiRead.loadModelsFromFolder('./staypi-test-data/test_models_user')
             .then(function(models) {
                 console.log('Models')
                 console.log('%j',models)
@@ -37,12 +37,12 @@ describe('Staypi', function() {
 
         it('should attach new model to existing models',function(done){
         	var models = {}, attached = false
-        	staypiRead.loadModelFromFolder('./test/test_models_user/User','User')
+        	staypiRead.loadModelFromFolder('./staypi-test-data/test_models_user/User','User')
         	.then(function(user_model){
         		attached = staypiRead.attachModel(models, user_model,'User')
 				expect(attached).to.equal(true)
 
-				staypiRead.loadModelFromFolder('./test/test_models_user/Website','Website')
+				staypiRead.loadModelFromFolder('./staypi-test-data/test_models_user/Website','Website')
 				.then(function(website_model){
 					attached = staypiRead.attachModel(models,website_model,'Website')
 
