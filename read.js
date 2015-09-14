@@ -36,7 +36,7 @@ function readModels(){
 				}
 
 			}else{
-				console.log('attachment path '+attachment_path+' does not exist')
+				//console.log('attachment path '+attachment_path+' does not exist')
 			}
 		}
 
@@ -52,7 +52,6 @@ function readModels(){
 	 */
 	function loadModelsFromFolder(top_folder){
 		var models = {}
-		console.log('inside loadModelsFromFolder with input- '+top_folder)
 
 		return fs.readdirAsync(top_folder)
 		.map(function(model_name){
