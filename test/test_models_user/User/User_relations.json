@@ -1,0 +1,6 @@
+{
+	"registeredWith":{
+		"model":"EmailAddress",
+		"cardinality":"one_to_one"
+	}
+}

@@ -1,0 +1,11 @@
+{
+    "initial": "created",
+    "transitions": {
+        "created": {
+            "verify": "verified"
+        },
+        "verified": {
+
+        }
+    }
+}

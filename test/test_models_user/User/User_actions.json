@@ -1,0 +1,6 @@
+{
+    "verify": {
+        "rest": true,
+        "operation": "User.checkVerificationCode"
+    }
+}

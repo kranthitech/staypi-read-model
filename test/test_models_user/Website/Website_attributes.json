@@ -1,0 +1,22 @@
+{
+    "title": "Website",
+    "description": "A website using the application",
+    "type": "object",
+    "properties": {
+        "domain": {
+            "description": "Domain name of the website",
+            "type": "string",
+            "format": "hostname"
+        },
+        "platform": {
+            "description": "Platform on which the Website is built. (Wordpress/ Magento etc)",
+            "default": "native",
+            "enum": ["native", "wordpress", "magento", "shopify"]
+        },
+        "taxonomy": {
+            "description": "Taxonomy of Content in the website",
+            "type": "object"
+        }
+    },
+    "required": ["domain"]
+}

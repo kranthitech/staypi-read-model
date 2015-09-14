@@ -1,0 +1,22 @@
+{
+    "title": "User",
+    "description": "A user of the application",
+    "type": "object",
+    "properties": {
+        "first_name": {
+            "description": "First name of the user",
+            "type": "string"
+        },
+        "last_name": {
+            "description": "Last name of the user",
+            "type": "string"
+        },
+        "password": {
+            "description": "md5 hashed password",
+            "type": "string",
+            "minLength": 32,
+            "maxLength": 32
+        }
+    },
+    "required": ["first_name"]
+}
