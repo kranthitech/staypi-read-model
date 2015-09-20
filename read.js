@@ -75,7 +75,7 @@ function readModels(){
 			})
 			return Promise.resolve(models)
 		},function(err){
-			console.log('Some error after map\n%j',err)
+			console.log('Error in reading the models\n%j',err)
 		})
 		.catch(function(err){
 			console.log('error while reading folder\n %j',err)
